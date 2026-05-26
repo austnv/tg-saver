@@ -4,4 +4,9 @@ version = "0.1.0"
 description = "Script to automatisation your Telegram media download"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "boto3>=1.43.14",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.1",
+    "telethon>=1.43.2",
+]
