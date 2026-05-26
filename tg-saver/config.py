@@ -19,6 +19,7 @@ class LogSettings(BaseSettings):
     log_dir: Path = Path("logs")
     max_files: int = 7
     rotation_time: str = "midnight"
+    enable_console_logger: bool = False
 
     class Config:
         env_prefix = "LOG_"

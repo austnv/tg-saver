@@ -36,8 +36,9 @@ def setup_logger(name: str = "tg-saver") -> logging.Logger:
     logger.addHandler(file_handler)
 
     # --- Обработчик для вывода в консоль (опционально) ---
-    console_handler = logging.StreamHandler(sys.stdout)
-    console_handler.setFormatter(formatter)
-    logger.addHandler(console_handler)
+    if settings.log.enable_console_logger:
+        console_handler = logging.StreamHandler(sys.stdout)
+        console_handler.setFormatter(formatter)
+        logger.addHandler(console_handler)
 
     return logger
