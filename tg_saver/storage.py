@@ -3,8 +3,8 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 import boto3
 from botocore.client import Config
-from config import settings
-from logger import setup_logger
+from .config import settings
+from .logger import setup_logger
 
 logger = setup_logger()
 

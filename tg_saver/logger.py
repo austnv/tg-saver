@@ -2,7 +2,7 @@ import logging
 import sys
 from pathlib import Path
 from logging.handlers import TimedRotatingFileHandler
-from config import settings
+from .config import settings
 
 def setup_logger(name: str = "tg-saver") -> logging.Logger:
     """Настраивает и возвращает логгер с ротацией файлов."""

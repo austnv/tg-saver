@@ -18,9 +18,9 @@ from telethon.tl.types import (
 )
 from telethon.tl.custom import Message
 
-from config import settings
-from logger import setup_logger
-from storage import get_storage, MediaStorage
+from .config import settings
+from .logger import setup_logger
+from .storage import get_storage, MediaStorage
 
 # Инициализация логгера и хранилища
 logger = setup_logger(__name__)
