@@ -263,7 +263,7 @@ async def main() -> None:
         logger.info("Клиент остановлен")
 
 
-if __name__ == "__main__":
+def start():
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
@@ -271,3 +271,6 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"Необработанная ошибка: {e}")
         raise
+
+if __name__ == '__main__':
+    start()
