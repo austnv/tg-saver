@@ -1,0 +1,7 @@
+[project]
+name = "tg-saver"
+version = "0.1.0"
+description = "Script to automatisation your Telegram media download"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
