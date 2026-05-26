@@ -1,3 +1,6 @@
 .venv
 .env
 logs
+.session
+
+__pycache__
